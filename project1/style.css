@@ -1,0 +1,63 @@
+
+    	html {
+  			scroll-behavior: smooth;
+			}
+    	header {
+    		background-color: white;
+    		border-bottom: 2px solid black;
+    		height: 230px;
+    		width: 100vw;
+    	}
+        body {margin:0;}
+        section {
+            height: 150vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: sticky;
+            top: -1px;
+        }
+        section.last {height: 100vh;}
+        section:nth-child(1) {
+            background-color:rgb(211, 133, 69);
+        }
+        section:nth-child(2) {
+            background-color:rgb(131, 133, 57);
+        }
+        section:nth-child(3) {
+            background-color:rgb(107, 84, 54);
+        }
+        section:nth-child(4) {
+            background-color:rgb(134, 182, 204);
+        }
+        .floaty-nav {
+        	position: fixed;
+        	right: 20px;
+        	top:50%;
+        	bottom:0;
+        }
+        .floaty-nav a { 
+        	border: 4px solid #333;
+        	width: 50px;
+        	height: 50px;
+        	border-radius: 50%;
+        	margin-bottom: 16px;
+        	display: inline-block;
+        	text-decoration: none;
+        }
+        .floaty-nav a.one{
+        	background-color: rgb(211, 133, 69);
+        }
+        .floaty-nav a.two{
+        	background-color: rgb(131, 133, 57);
+        }
+        .floaty-nav a.three{
+        	background-color: rgb(107, 84, 54);
+        }
+        .floaty-nav a.four{
+        	background-color: rgb(134, 182, 204);
+        }
+        .floaty-nav a:hover {
+        	background-color: white;
+        }
