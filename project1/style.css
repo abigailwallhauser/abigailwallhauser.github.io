@@ -1,16 +1,24 @@
 
     	html {
-  			scroll-behavior: smooth;
+  			 scroll-behavior: smooth; 
 			}
     	header {
     		background-color: white;
-    		border-bottom: 2px solid black;
-    		height: 230px;
-    		width: 100vw;
+    		border-bottom: 4px solid black;
+    		height: 60px;
+            width: 100vw;
+            font-size: 50px;
+            padding: 20px 0px 20px 30px;
     	}
         body {margin:0;}
+
+        img{
+            width: 100%;
+        }
+
         section {
             height: 150vh;
+            font-family: Arial Rounded MT Bold;
             width: 100vw;
             display: flex;
             align-items: center;
@@ -20,22 +28,28 @@
         }
         section.last {height: 100vh;}
         section:nth-child(1) {
-            background-color:rgb(211, 133, 69);
+            background-color:white;
         }
         section:nth-child(2) {
-            background-color:rgb(131, 133, 57);
+            background-color:rgb(211, 133, 69);
         }
         section:nth-child(3) {
-            background-color:rgb(107, 84, 54);
+            background-color:rgb(131, 133, 57);
         }
         section:nth-child(4) {
+            background-color:rgb(107, 84, 54);
+        }
+        section:nth-child(5) {
             background-color:rgb(134, 182, 204);
         }
+
         .floaty-nav {
         	position: fixed;
         	right: 20px;
         	top:50%;
-        	bottom:0;
+            bottom:0;
+            align-items: right;
+            justify-content: center;
         }
         .floaty-nav a { 
         	border: 4px solid #333;
@@ -44,7 +58,11 @@
         	border-radius: 50%;
         	margin-bottom: 16px;
         	display: inline-block;
-        	text-decoration: none;
+            text-decoration: none;
+
+        }
+        .floaty-nav a.intro{
+            background-color: rgb(128, 144, 247);    
         }
         .floaty-nav a.one{
         	background-color: rgb(211, 133, 69);
@@ -61,3 +79,45 @@
         .floaty-nav a:hover {
         	background-color: white;
         }
+
+        #pintro {
+            color: white;
+                font-family: Arial;
+                font-size: 50px;
+                padding: 50px;
+                text-align: center;
+                background-color: rgb(128, 144, 247);
+                background-position-y: center;
+                height: 200px;
+                background-position: top;
+                border-bottom: 4px solid black;
+        }
+
+        .grid-2 {
+            display: flex;
+          }
+          .grid-2 article {
+            padding: 60px;
+          }
+          .grid-2 .small {
+            flex: 25%;
+          }
+          
+          .grid-2 .large {
+            flex: 75%;
+            display: flex;
+          }
+          .grid-2 .large div {
+            flex: 75%;
+          }
+          .grid-2 .large .content {
+            margin-left: -80px;
+          }
+
+        .content {
+            font-family: Arial;
+            color: white;
+            text-align: left;
+          }
+
+    

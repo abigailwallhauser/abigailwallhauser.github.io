@@ -3,38 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Sticky pages</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css">  
 </head>
-<body>
 
-   <section id="one">
-   	<header>HABITUAL 
-   		<nav>
-   			<a href="#one">one</a><a href="#two">two</a> <a href="#three">three</a> <a href="#four">four</a> </nav>
-   	</header>
-       
-       <p>ORANGE</p>
-       
-   </section>
+<body>
+    <section id="intro">
+        <header>HABITUAL
+        </header>
+            <article>
+                <p id=pintro>Habits formed and practiced through a pandemic, organized by color.</p>
+             </article>
+    </section>
+
+    <section id="one">
+        <header>ORANGE 
+        </header>
+             <div class="grid-2">
+                <article class="small">
+                <div> <img id=coffee src="photos/coffee.JPG"/> </div>
+                <p class="content">Pour over coffee in my second favorite mug, a gift from my sister. My favorite is a white mug with red script spelling the name of the diner in my hometown. It takes more time than walking to the coffee shop down the road.</p>
+                </article>
+            <article class="large">
+                <img src="photos/sink.JPG"/>
+            </article> </div> 
+    </section>
+
    <section id="two">
-   	<header>GREEN</header>
-       
-       <p>GREEN</p>
-       
+   	    <header>GREEN
+        </header>
+            <div class="grid-2">
+                <article class="small">
+                <div> <img src="photos/mop.JPG"/> </div>
+                <p class="content">Routinely and aggressively cleaning the apartment. I listen to an audiobook and block off my day. Its obsessive, concerning, and euphoric. </p>
+                </article>
+            <article class="large">
+                <img src="photos/flower.JPG"/>
+            </article> </div>
    </section>
-   <section class="vote" id="three">
-   	<header>BROWN</header>
-       
-       <p>BROWN</p>
-       
+
+   <section id="three">
+        <header>BROWN
+        </header>
+            <div class="grid-2">
+                <article class="small">
+                <div> <img src="photos/bedside.JPG"/> </div>
+                <p class="content"> Water at my bedside while I watch the sun rise throught the window. A forced moment of doing nothing before the day begins. </p>
+                </article>
+            <article class="large">
+                <img src="photos/books.JPG"/>
+            </article> </div>
    </section>
+
+   <section id="four">
+        <header>BLUE
+        </header>
+            <div class="grid-2">
+                <article class="small">
+                <div> <img src="photos/sky.JPG"/> </div>
+                <p class="content"> Running through my neighborhood. Unfamiliar roads became second nature quickly. I know where the hills are and avoid them. I like to run by the dog park and fantasize about having one myself. </p>
+                </article>
+            <article class="large">
+                <img src= ""/>
+            </article> </div>
+    </section>
+
    <nav class="floaty-nav">
+            <a class="intro" href="#intro"></a><br>
    			<a class="one" href="#one"></a><br>
    			<a class="two" href="#two"></a><br>
-               <a class="three" href="#three"></a><br>
-               <a class="four" href="#four"></a></nav>
-            
- <p></p>   
+            <a class="three" href="#three"></a><br>
+            <a class="four" href="#four"></a></nav>
+            <script>
+                window.scroll({  top: 0,   left: 0,   behavior: 'smooth'});
+            </script>   
 </body>
 </html>
