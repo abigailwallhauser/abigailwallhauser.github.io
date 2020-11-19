@@ -1,0 +1,130 @@
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 40px;
+    min-height: 40px;
+    overflow: hidden;
+    }
+
+
+.track {
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 20s linear .01s infinite;
+    padding-bottom: 6px;
+    }
+
+.flex-wrap {
+    border: 2px solid;
+    border-color: rgb(236, 230, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+
+.james-title {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.weather-temperature {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.date {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.image-flex {
+    border-bottom: 4px solid;
+    border-top: 4px solid;
+    border-color: rgb(236, 230, 212);
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    }
+
+
+.flex-leftside {
+    background: url(project2images/littleitaly.png);
+    width: 40%;
+    min-height: 400px;
+    background-size: cover !important;
+    border-left: 4px solid;
+    border-color: rgb(236, 230, 212);
+    background-position: center center !important;
+    }
+
+.flex-rightside {
+    background: url(project2images/clouds.png);
+    width: 60%;
+    min-height: 400px;
+    background-size: cover !important;
+    background-position: center center !important;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    border-color: rgb(236, 230, 212);
+    }
+
+.nav-flex {
+    text-align: center;
+    }
+
+.nav-row1, .nav-row2 {
+    display: flex;
+    flex-direction: row;
+    line-height: 50px;
+    }
+
+
+.locations-row {
+display: flex;
+}
+  
+.locations-column {
+flex: 50%;
+padding: 5px;
+}
+
+
+.marquee {
+    position: relative;
+    background-color: rgb(105, 115, 133);
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+}
+
+.marquee .content {
+    width: fit-content;
+    color: rgb(236, 230, 212);
+    padding-top: 10px;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 5s linear infinite;
+    animation-play-state: paused;
+}
+
+.marquee span {
+    font-size: 10vw;
+    padding: 0 2vw;
+}
+
+.marquee:hover .marquee .content {
+    animation-play-state: running;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
