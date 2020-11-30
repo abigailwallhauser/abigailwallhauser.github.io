@@ -11,13 +11,13 @@
 .track {
     position: absolute;
     white-space: nowrap;
-    animation: marquee 20s linear .01s infinite;
+    animation: marquee 5s linear .01s infinite;
     padding-bottom: 6px;
     }
 
 .flex-wrap {
     border: 2px solid;
-    border-color: rgb(236, 230, 212);
+    border-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,7 +41,7 @@
 .image-flex {
     border-bottom: 4px solid;
     border-top: 4px solid;
-    border-color: rgb(236, 230, 212);
+    border-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -49,24 +49,24 @@
 
 
 .flex-leftside {
-    background: url(project2images/littleitaly.png);
+    background: url(images/littleitalybw.JPG);
     width: 40%;
     min-height: 400px;
     background-size: cover !important;
     border-left: 4px solid;
-    border-color: rgb(236, 230, 212);
+    border-color: rgb(0, 0, 0);
     background-position: center center !important;
     }
 
 .flex-rightside {
-    background: url(project2images/clouds.png);
+    background: url(images/cloudsbw.JPG);
     width: 60%;
     min-height: 400px;
     background-size: cover !important;
     background-position: center center !important;
     border-left: 4px solid;
     border-right: 4px solid;
-    border-color: rgb(236, 230, 212);
+    border-color: rgb(0, 0, 0);
     }
 
 .nav-flex {
@@ -92,7 +92,7 @@ padding: 5px;
 
 .marquee {
     position: relative;
-    background-color: rgb(105, 115, 133);
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
@@ -101,7 +101,7 @@ padding: 5px;
 
 .marquee .content {
     width: fit-content;
-    color: rgb(236, 230, 212);
+    color: rgb(255, 255, 255);
     padding-top: 10px;
     display: flex;
     position: relative;
@@ -142,7 +142,31 @@ padding: 5px;
     src: url("//db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.woff") format("woff"), url("//db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.svg#Andale Mono") format("svg");
 }
 
-.menu-large, .menu-small{
+.menu-large, .menu-small, .menu-header {
     font-family: Andale Mono V2;
     src: url("//db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.woff") format("woff"), url("//db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.svg#Andale Mono") format("svg");
 }
+
+.menu-large{
+    font-size: 16pt;
+}
+
+.menu-small{
+    font-size: 12pt;
+}
+
+.menu-grid{
+    display:flex;
+}
+
+.menu-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-column {
+      width: 100%;
+    }
