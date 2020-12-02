@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Sticky pages</title>
+    <title>Social</title>
     <link rel="stylesheet" href="james.css">  
 </head>
 
 <body>
-    <div class="social-head">SOCIAL</div>
-    <div class="social-h2">@JAMESCOFFEECO</div>
+
+    <header class="nav">
+        <div class="icon">
+            <div class="hamburger"></div>
+        </div>
+        <div class="menu-mobile">
+            <a href="james.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="locations.html">Locations</a>
+        </div>
+    </header>
+    <header class="desktop">
+        <div class="menu-desktop">
+            <a href="james.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="locations.html">Locations</a>
+        </div>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+
+    <div class="social-head">CONNECT</div>
+
+<div class="social-row"></div>
+    <div class="social-column">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/grid2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/grid9.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/grid6.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/grid4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/grid3.jpg" style="width:100%">
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    <div class="social-column">
+        <div class="social-form">
+        <form action="https://formspree.io/f/xleowvdy" method="POST">
+            <label>
+                Your email:
+                <input type="text" name="_replyto">
+            </label>
+            <br>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
+        </div>
+    </div>
+</div>
+
 </body>
