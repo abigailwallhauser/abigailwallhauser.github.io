@@ -3,21 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Change this text! It shows up in the browser tab</title>
+    <title>Abigail's 341 Page</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <script>
+      var rooster = new Audio();
+      rooster.src = "rooster.mp3"
+    </script>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font: Arial;
+      }
+      
+      h1 {
+        color: white;
+        font-family: Arial;
+        margin-left: 40px;
+      } 
+
+      h2{
+        color: white;
+        font-family: Arial;
+        margin-left: 85px;
+        font-size: 16pt;
+      }
+
+      nav, audio{
+        font-family: Arial;
+        color: white;
+        background-color: white;
+      }
+
+      .audio{
+        background: white;
+        color: black;
+        padding: 10px;
+        margin-left: 70px;
+
+      }
+      </style>
+
+
   </head>
   <body>
     <header>
       <h1>Abigail's Homepage</h1>
+      <h2>This is my homepage. It's fun!</h2>
     </header>
     <nav>
-      <div><a href="index.html">HOME</a><a href="design-journal.html">DESIGN JOURNAL</a><a href="contact.html">CONTACT</a><a href="habitual.html">HABITUAL</a></a></div>
+      <div><a href="index.html">HOME</a><a href="design-journal.html">DESIGN JOURNAL</a><a href="contact.html">CONTACT</a><a href="http://abigailwallhauser.github.io/project1/habitual.html">HABITUAL</a><a href="http://abigailwallhauser.github.io/project2/james.html">JAMES COFFEE CO.</a></div>
     </nav>
-    <main>
-      <p>This is my homepage. Are you having fun?</p>
-    </main>
-    <footer></footer>
+
+    <br>
+
+    <div class="audio">
+      <a href="#" onmousedown="rooster.play()">What does a rooster sound like?</a>
+    </div>
+
   </body>
 </html>
