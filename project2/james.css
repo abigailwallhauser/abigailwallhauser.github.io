@@ -82,7 +82,13 @@
     width: 100%;
     flex-wrap: wrap;
     }
-
+.nav-flex a {
+    color: black;
+    text-decoration: none;
+}
+.nav-flex a:hover {
+    text-decoration: underline;
+}
 .nav-row1, .nav-row2 {
     line-height: 50px;
     }
@@ -281,7 +287,9 @@ padding: 5px;
     src: url("https://db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.woff") format("woff"), url("https://db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/3156116d1667eea051f96b697f069624.svg#Andale Mono") format("svg");
     text-align: left;   
 }
-
+.about-column img {
+    width: 100%;
+}
 .social-form{
     text-align: left;
     padding: 10pt;
